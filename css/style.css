@@ -70,13 +70,24 @@ textarea {
   background-color: #06AED5;
   color: white;
   height: 100%;
-  padding-top: 2%;
-  margin: auto;
+  position: relative;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+}
+
+.btnIcon {
+  position: absolute;
+  top: 15%;
+  right: 20%;
+}
+
+@media screen and(max-width:720px){
+  .btnIcon {
+    right:50%;
+  }
 }
 
 footer {

@@ -46,8 +46,9 @@ function renderRows() {
         newDiv.append(colTwo);
 
         var colThree = $("<div>");
-        colThree.addClass("col-1 far fa-save fa-2x saveBtn saveBtn");
+        colThree.addClass("col-1 saveBtn");
         colThree.attr("data-index", times[i]);
+        colThree.append("<h6 class='far fa-save fa-2x btnIcon'></h6>");
         newDiv.append(colThree);
     }
 }
