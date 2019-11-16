@@ -25,43 +25,56 @@ function renderRows() {
         colTwo.addClass("col-10 description");
         if (times[i] > 0 && times[i] < 6) {
             colTwo.attr("data-index", (parseInt(times[i]) + 12));
+            colTwo.append("<textarea class='userInput' data-index='" + (parseInt(times[i] + 12)) + "'></textarea>");
         }
         else {
             colTwo.attr("data-index", times[i]);
+            colTwo.append("<textarea class='userInput' data-index='" + times[i] + "'></textarea>");
         }
-        colTwo.append("<textarea class='userInput'></textarea>");
         newDiv.append(colTwo);
 
         var colThree = $("<div>");
         colThree.addClass("col-1 far fa-save fa-2x saveBtn saveBtn");
+        if (times[i] > 0 && times[i] < 6) {
+            colThree.attr("data-index", (parseInt(times[i]) + 12));
+        }
+        else {
+            colThree.attr("data-index", times[i]);
+        }
         newDiv.append(colThree);
         
-    }
-}
-
-
-
-timeColors();
-function timeColors() {
-    var now = moment();
-    var timeIndex = $(".description").data("index");
-    if (timeIndex < now) {
-        $(".description").addClass("past");
-    }
-    else if (timeIndex > now) {
-        $(".description").addClass("future");
-
-    }
-    else if (timeIndex = now) {
-        $(".description").addClass("present");
-    }
-    else {
+        var now = moment().hour();
+        var timeIndex = $(".description").attr("data-index");
+        // if (timeIndex < now) {
+        //     $(".description").addClass("past");
+        // } // gray
+        if (timeIndex > now) {
+            $(".description").addClass("future");
+        } // green
+        // if (timeIndex == now) {
+        //     $(".description").addClass("present");
+        // } // red
+        else {
+            console.log(timeIndex);
+        }
+        console.log(now);
         console.log(timeIndex);
     }
-    console.log(now);
 }
 
-$(".saveBtn").on("click", SaveInput());
+
+
+// timeColors();
+// function timeColors() {
+//     v
+
+// }
+
+// if data-index = data-index save that data
+$(".saveBtn").on("click", function(){
+    
+});
+
 function SaveInput(){
     var userInput = $(".userInput");
     console.log(userInput);
