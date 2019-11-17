@@ -182,18 +182,18 @@ function plannerLaunch(){
     $("#id17").text(taskList17);
 }
 
-function clearPlanner() {
+// $("#clearBtn").on("click", function() {
+function clearButton(){
     event.preventDefault();
     console.log("clearing planner");
     $("textarea").text("");
-    localStorage.removeItem("task9");
-    localStorage.removeItem("task10");
-    localStorage.removeItem("task11");
-    localStorage.removeItem("task12");
-    localStorage.removeItem("task13");
-    localStorage.removeItem("task14");
-    localStorage.removeItem("task15");
-    localStorage.removeItem("task16");
-    localStorage.removeItem("task17");
-
+    localStorage.removeItem("tasks9");
+    localStorage.removeItem("tasks10");
+    localStorage.removeItem("tasks11");
+    localStorage.removeItem("tasks12");
+    localStorage.removeItem("tasks13");
+    localStorage.removeItem("tasks14");
+    localStorage.removeItem("tasks15");
+    localStorage.removeItem("tasks16");
+    localStorage.removeItem("tasks17");
 }
