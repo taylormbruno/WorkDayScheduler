@@ -184,9 +184,9 @@ function plannerLaunch(){
 
 // $("#clearBtn").on("click", function() {
 function clearButton(){
-    event.preventDefault();
+    // event.preventDefault();
     console.log("clearing planner");
-    $("textarea").text("");
+    var textEl = document.body.querySelectorAll("textarea");
     localStorage.removeItem("tasks9");
     localStorage.removeItem("tasks10");
     localStorage.removeItem("tasks11");
@@ -196,4 +196,6 @@ function clearButton(){
     localStorage.removeItem("tasks15");
     localStorage.removeItem("tasks16");
     localStorage.removeItem("tasks17");
+    $(textEl).empty();
+    window.location.reload();
 }

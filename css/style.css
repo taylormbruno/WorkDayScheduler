@@ -36,6 +36,7 @@ textarea {
   height: 80px;
   border-top: 1px solid white;
   margin: 5px 0px;
+  width: 100%;
 }
 
 .hour {
@@ -80,4 +81,23 @@ textarea {
 
 footer {
   text-align: center;
+  padding: 15px;
+}
+
+#clearBtn {
+  padding:10px;
+  background-color: #22201c;
+  color: white;
+  /* font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1; */
+  border-radius: 15px;
+}
+h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  line-height: 1;
+  float: right;
+  padding: 10px 0px 0px 10px;
 }
