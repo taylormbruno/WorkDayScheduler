@@ -186,4 +186,14 @@ function clearPlanner() {
     event.preventDefault();
     console.log("clearing planner");
     $("textarea").text("");
+    localStorage.removeItem("task9");
+    localStorage.removeItem("task10");
+    localStorage.removeItem("task11");
+    localStorage.removeItem("task12");
+    localStorage.removeItem("task13");
+    localStorage.removeItem("task14");
+    localStorage.removeItem("task15");
+    localStorage.removeItem("task16");
+    localStorage.removeItem("task17");
+
 }
