@@ -3,6 +3,9 @@
 ##### A simple calendar application that allows the user to save events for each hour of the day during standard business hours.
 
 ![Day Scheduler gif](images/dayPlanner.gif)
+
+[Link to project](https://taylormbruno.github.io/hwUnit05)
+
 ## Description
 The current date is listed at the top of the page inside the jumbotron.
 
