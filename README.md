@@ -4,7 +4,7 @@
 
 ![Day Scheduler gif](images/dayPlanner.gif)
 
-[Link to project](https://taylormbruno.github.io/hwUnit05)
+[Link to project](https://taylormbruno.github.io/WorkDayScheduler)
 
 ## Description
 The current date is listed at the top of the page inside the jumbotron.
